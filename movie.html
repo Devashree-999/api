@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        input{
+            text-align: center;
+            width: 400px;
+            height: 30px;
+            border-radius: 15px;
+        }
+        button{
+            background-color: black;
+            color: aliceblue;
+            
+            height: 35px;
+            border-radius: 15px;
+        }
+        .child{
+            max-width: 500px;
+            align-items: center;
+            font-family: cursive;
+            border: solid beige;
+            border-radius: 15px;
+           color:antiquewhite;
+            background: linear-gradient(black,rgb(142, 139, 139));
+        }
+        h1{
+            font-family: cursive;
+        }
+        .parent{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-area: 10px;
+           
+        }
+    </style>
+</head>
+<body>
+    <h1>MOVIE PAGE</h1>
+    <input type="text" placeholder="search here">
+    <button type="submit">search</button>
+    <div class="parent"></div>
+    <script src="movie.js"></script>
+</body>
+</html>
